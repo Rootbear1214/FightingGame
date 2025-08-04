@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Fighting Game</h1>
+        <div class="controls-info">
+            <div class="player-controls">
+                <h3>Human Player</h3>
+                <p>WASD: Move | J: Punch</p>
+            </div>
+            <div class="player-controls ai-player">
+                <h3>AI Opponent</h3>
+                <p>Computer Controlled</p>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="game-info">
+            <p>Fight against the AI! Use WASD to move and J to punch.</p>
+            <p><small>F1: Debug | ESC: Pause | R: Reset</small></p>
+        </div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="js/input.js"></script>
+    <script src="js/physics.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
